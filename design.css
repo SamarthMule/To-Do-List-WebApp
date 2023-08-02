@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(59, 59, 52);
+    background-image: url(nature-g9bab46726_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
+}
+.Box{
+    position: relative;
+    width: 800px;
+    height: 700px;
+    border-radius: 30px;
+    background-color:#315353;
+    padding: 30px 50px;
+    box-shadow: 25px 25px 85px rgba(34, 139, 139, 0.25),
+    10px 10px 70px rgba(34, 139, 139, 0.25),
+    inset 5px 5px 10px rgba(34, 139, 139, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 25px rgba(34, 139, 139, 0.75);
+}
+h1{
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color:rgb(255, 145, 0);
+    font-size: 4em;
+    text-shadow:0px 0px 10px #0479ff;
+}
+#inputbox{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 2em;
+    font-family: Verdana;
+    font-weight: bold;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.Box li
+{
+    font-size: 30px;
+    position: relative;
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    background-color: #2f363e;
+    margin: 15px 0;
+    padding: 10px 10px 10px 45px;
+    min-height: 50px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: aqua;
+    box-shadow: 5px 5px 10px rgba(163, 30, 30, 0.25),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.Box li i
+{
+    position: absolute;
+    right: -40px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(255, 0, 128);
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5); 
+}
+.Box li i::before
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: rgb(0, 255, 170);
+    transform: rotate(45deg);
+}
+.Box li i::after
+{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: rgb(0, 253, 169);
+    transform: rotate(-45deg);
+}
+.Box li::before
+{
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: #1a293a;
+    border-radius: 50%;
+}
+.Box li.done{
+    text-decoration: line-through #fff;
+    background-color: #1a293a;
+    box-shadow: 5px 5px 10px rgba(30, 163, 36, 0.25),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+.Box li.done::after
+{
+    content: '';
+    position: absolute;
+    left: 16px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(315deg);
+}
+#list{
+    position: relative;
+    margin-top: 25px;
+    height: 450px;
+    overflow: auto;
+    padding: 10px;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #fff;
+}
